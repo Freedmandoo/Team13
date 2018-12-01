@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33958045247336892}
   - component: {fileID: 23420607682843780}
   - component: {fileID: 135204505778918826}
+  - component: {fileID: 114678572778425198}
   - component: {fileID: 114935224455464660}
   m_Layer: 0
   m_Name: Enemy
@@ -85,13 +86,44 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1819342309951018}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114935224455464660
+--- !u!114 &114678572778425198
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1819342309951018}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f8c0dacf2b9264e8f3b473cb2c0144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wayPoints:
+  - {fileID: 114095450525918018, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114962463970865196, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114020664629594366, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114660370765285864, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114007678903499510, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114738519051481652, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114909132834912226, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114937570262369686, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114518898881712534, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114315728214263388, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114893459967798124, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114536837465366582, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114020390356054182, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114773967796623940, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  - {fileID: 114490777615162210, guid: d96573b93f2ef1347b30af2fb46a5559, type: 2}
+  speed: 10.04
+  isCircular: 0
+  inReverse: 0
+  spidersEscaped: 0
+--- !u!114 &114935224455464660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1819342309951018}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5894117dfa1864ed9bc89d18ea154cb3, type: 3}
   m_Name: 
