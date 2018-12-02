@@ -139,7 +139,9 @@ public class Mover : MonoBehaviour
              //If at the start or the end then reverse
             if ((!inReverse && currentIndex + 1 >= wayPoints.Length) || (inReverse && currentIndex == 0))
             {
+                ScoreScript.scoreValue += 1;
                 Destroy(gameObject);
+                
                 return;
                 inReverse = !inReverse;
             }
