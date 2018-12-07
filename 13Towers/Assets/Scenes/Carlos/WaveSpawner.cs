@@ -8,6 +8,7 @@ public class WaveSpawner : MonoBehaviour {
 
     public float timeBetweenWaves = 5f;
     private float countdown = 2f;
+    public static int life = 2;
 
     private int waveNumber = 1;
 
@@ -30,12 +31,13 @@ public class WaveSpawner : MonoBehaviour {
             SpawnEnemy();
         }
 
-        waveNumber++;
+       // waveNumber++;
     }
 
     void SpawnEnemy ()
     {
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        life += 1;
     }
 
 }
