@@ -45,9 +45,10 @@ public class Life : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if (getLives() == 0)
+	    if (getLives() == 0) //What happens when the spider dies
         {
             Destroy(gameObject);
+            WaveSpawner.spidersKilled += 1;
             
             
         }
