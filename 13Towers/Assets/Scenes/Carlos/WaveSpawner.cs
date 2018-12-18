@@ -20,20 +20,16 @@ public class WaveSpawner : MonoBehaviour {
     private int waveNumber = 1;
     public SceneLoader loader;
 
-
-
     void Update()
     {
         if(spidersInLevel==spidersKilled)
         {
             Debug.Log("Level finished!");
-
             SceneManager.LoadScene("MainMenu");
             spidersKilled = 0;
             ScoreScript.scoreValue = 0;
             GameScore.scoreValue = 0;
             WaveSpawner.life = 2;
-
         }
 
         if (countdown <= 0f)
@@ -42,25 +38,18 @@ public class WaveSpawner : MonoBehaviour {
             {
                 Spawnwave();
                 spiderCount++;
-            }
-            
-               
-           
-            
+            } 
             countdown = timeBetweenWaves;
         }
-
         countdown -= Time.deltaTime;
     }
 
     void Spawnwave ()
     {
-
         for (int i = 0; i < waveNumber; i++)
         {
             SpawnEnemy();
         }
-
        // waveNumber++;
     }
 
@@ -69,5 +58,4 @@ public class WaveSpawner : MonoBehaviour {
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
         life += 1;
     }
-
 }
